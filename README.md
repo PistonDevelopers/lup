@@ -26,7 +26,7 @@ This type contains evidence that justifies the value.
 
 Here is a simple example using the `Any` loop and the `by` syntax:
 
-```
+```rust
 #[macro_use]
 extern crate lup;
 
@@ -59,7 +59,7 @@ lup!(Any<_>: i in 0..words.len() => {words[i] == "lamb"})
 
 Here is a slightly more complex example:
 
-```
+```rust
 #[macro_use]
 extern crate lup;
 
@@ -90,7 +90,7 @@ The `Secret` type is used to combine results from loops to give meaningful answe
 
 Another example using the `Max` loop:
 
-```
+```rust
 #[macro_use]
 extern crate lup;
 
@@ -118,7 +118,7 @@ The evidence points to the item that first achieves maximum value.
 
 Here is an example that demonstrates the full power of secrets:
 
-```
+```rust
 #[macro_use]
 extern crate lup;
 
