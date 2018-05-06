@@ -26,7 +26,7 @@
 //!
 //! Here is a simple example using the `Any` loop and the `by` syntax:
 //!
-//! ```
+//! ```rust
 //! #[macro_use]
 //! extern crate lup;
 //!
@@ -59,7 +59,7 @@
 //!
 //! Here is a slightly more complex example:
 //!
-//! ```
+//! ```rust
 //! #[macro_use]
 //! extern crate lup;
 //!
@@ -90,7 +90,7 @@
 //!
 //! Another example using the `Max` loop:
 //!
-//! ```
+//! ```rust
 //! #[macro_use]
 //! extern crate lup;
 //!
@@ -118,7 +118,7 @@
 //!
 //! Here is an example that demonstrates the full power of secrets:
 //!
-//! ```
+//! ```rust
 //! #[macro_use]
 //! extern crate lup;
 //!
