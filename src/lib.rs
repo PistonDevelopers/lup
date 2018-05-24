@@ -164,6 +164,7 @@ pub use min::Min;
 pub use vector::Vector;
 pub use sift::Sift;
 pub use secret::Secret;
+pub use for_loop::For;
 
 mod sum;
 mod prod;
@@ -174,6 +175,7 @@ mod min;
 mod vector;
 mod sift;
 mod secret;
+mod for_loop;
 
 /// Implemented by custom loops.
 pub trait Lup<I, T> {
@@ -345,5 +347,13 @@ mod tests {
         });
         let a = lup!(Sum<_>: i, j, k by list => {list[i][j][k]});
         assert_eq!(a, 81.0);
+    }
+
+    #[test]
+    fn for_loop() {
+        let list = vec![vec![1, 2], vec![3, 4]];
+        lup!(For: i, j by list => {
+            println!("{}", list[i][j]);
+        });
     }
 }
