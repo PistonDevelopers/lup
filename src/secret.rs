@@ -10,6 +10,7 @@ use std::cmp::{PartialOrd, PartialEq};
 /// which has as evidence the index where the maximum value can be found.
 ///
 /// The meaning of secrets is interpreted depending on context.
+#[derive(Debug, Clone)]
 pub struct Secret<E, T> {
     /// The evidence for the value.
     pub evidence: Option<E>,
