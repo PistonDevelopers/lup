@@ -15,7 +15,7 @@ You can create your own custom loops by implementing the `Lup` trait.
 - Supports `continue`, `break` or `return` from within the loop
 - Packed notation for nested loops, `i in 0..3, j in 0..3 =>`
 - Short-hand notation with safe range, `i, j by list =>`
-- Automatically infers evidence type of secrets
+- Automatically infers evidence type of secrets (the ones used in [Dyon](https://github.com/pistondevelopers/dyon)
 - Can be used for numeric brute-force theorem proving
 - Ergononmic when working with vectors up to 4 dimensions
 
